@@ -53,6 +53,19 @@ E.g reverseString('algorithms') // should return 'smhtirogla'
 
 
     //recursion method
+
+        //Recursion is a programming technique in which the intention is to reduce the problem into smaller instances of the same problem until it is completely solved.
+
+        function reverseString(text){
+            if(text === ''){
+                return ''
+            } else {
+                return reverseString(text.substr(1)) + text[0]
+            }
+        }
+
+        //we make use of the .substr() method in JavaScript to return a portion of the text received. It expects two parameters, one specifying the starting index and the other specifying the number of characters afterwards(optional)
+
     //using .reduce()
 
 function reverseString(text) {
